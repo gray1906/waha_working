@@ -1,9 +1,12 @@
-FROM devlikeapro/waha:latest
+FROM node:18-alpine
 
 WORKDIR /app
 
-COPY .env .env
+COPY package*.json ./
+COPY .env .
+
+RUN npm install -g @devlikeapro/waha
 
 EXPOSE 3000
 
-CMD ["waha"]
+CMD ["npx", "waha"]
