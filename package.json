@@ -1,0 +1,8 @@
+{
+  "name": "waha-flyer-bot",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "waha"
+  },
+  "dependencies": {}
+}
